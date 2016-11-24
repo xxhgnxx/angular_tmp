@@ -11,3 +11,4 @@ import {ClickMeComponent} from "./click-me.componet";
     bootstrap: [AppComponent, ClickMeComponent]                // 引导是组件设置，自动添加到需要编译的列表entryComponents中
 })
 export class AppModule { }                  // 导出该类，以便引用
+ //  123
