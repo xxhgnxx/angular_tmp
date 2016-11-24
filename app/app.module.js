@@ -12,16 +12,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core"); // angular核心库
 var platform_browser_1 = require("@angular/platform-browser"); // 程序跑在浏览器中，所以调用浏览器模块？
+var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component"); // 我们自己些的组件类
-var click_me_componet_1 = require("./click-me.componet");
+var hero_form_component_1 = require("./hero-form.component");
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, click_me_componet_1.ClickMeComponent],
-            bootstrap: [app_component_1.AppComponent, click_me_componet_1.ClickMeComponent] // 引导是组件设置，自动添加到需要编译的列表entryComponents中
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
+            declarations: [app_component_1.AppComponent, hero_form_component_1.HeroDetailComponent],
+            bootstrap: [app_component_1.AppComponent] // 引导是组件设置，自动添加到需要编译的列表entryComponents中
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

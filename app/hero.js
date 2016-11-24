@@ -1,8 +1,9 @@
 "use strict";
 var Hero = (function () {
-    function Hero(id, name) {
+    function Hero(id, name, alterEgo) {
         this.id = id;
         this.name = name;
+        this.alterEgo = alterEgo;
     }
     return Hero;
 }());
